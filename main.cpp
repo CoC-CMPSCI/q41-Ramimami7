@@ -20,6 +20,35 @@ int main()
 
     // TODO
 
+    switch(choice){
+        case 1:
+            cout << "Enter radius of the cirlce: ";
+            cin >> radius;
+            area = 3.14159 * radius * radius;
+            break;
+        case 2:
+            cout << "Enter height and width: ";
+            cin >> height;
+            cin >> width;
+            area = width * height; 
+            break;
+        case 3:
+            cout << "Enter triangle's base and height: ";
+            cin >> base;
+            cin >> height;
+            area = base * height * 0.5;
+            break;
+        case 4:
+            cout << "Program stopped";
+            return 0;
+        default:
+            cout <<"Wrong number";
+            return 1;
+
+
+
+    }
+
     cout << left << setprecision(2) << fixed;
     cout << "The area is " << area << endl;
 
