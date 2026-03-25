@@ -28,14 +28,12 @@ int main()
             break;
         case 2:
             cout << "Enter height and width: ";
-            cin >> height;
-            cin >> width;
+            cin >> height >> width;
             area = width * height; 
             break;
         case 3:
             cout << "Enter triangle's base and height: ";
-            cin >> base;
-            cin >> height;
+            cin >> base >> height;
             area = base * height * 0.5;
             break;
         case 4:
